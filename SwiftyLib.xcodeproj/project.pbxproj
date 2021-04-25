@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F1869AE62635D3550016C185 /* SwiftyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = F1869AE42635D3550016C185 /* SwiftyLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1869AED2635D6020016C185 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1869AEC2635D6020016C185 /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1869AE12635D3550016C185 /* SwiftyLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1869AE42635D3550016C185 /* SwiftyLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyLib.h; sourceTree = "<group>"; };
 		F1869AE52635D3550016C185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1869AEC2635D6020016C185 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				F1869AE42635D3550016C185 /* SwiftyLib.h */,
 				F1869AE52635D3550016C185 /* Info.plist */,
+				F1869AEC2635D6020016C185 /* SwiftyLib.swift */,
 			);
 			path = SwiftyLib;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					F1869AE02635D3550016C185 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1869AED2635D6020016C185 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		F1869AEA2635D3550016C185 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J2AS8B8DGM;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bekdaulet.kassymov.SwiftyLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		F1869AEB2635D3550016C185 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J2AS8B8DGM;
